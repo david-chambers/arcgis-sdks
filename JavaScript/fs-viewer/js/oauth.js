@@ -80,8 +80,8 @@ require([
       var queryParams = {
         q: "owner:" + portalUser.username,
         sortField: "numViews",
-        sortOrder: "desc",
-        num: 20
+        sortOrder: "title",
+        num: 100
       };
 
       //After querying call createDropdownList
@@ -101,9 +101,10 @@ require([
 
       for(var i = 0; i < resultsArray.length; i++){
         if(resultsArray[i].displayName === "Feature Layer"){
+          console.log(resultsArray[i].title);
           
 
-          var htmlFragment = "<li><a href=\"#\">" + resultsArray[i].name + "</a></li>";
+          var htmlFragment = "<li><a href=\"#\">" + resultsArray[i].title + "</a></li>";
           bootstrapSelectJQuery.append(htmlFragment);
 
         }
@@ -122,7 +123,7 @@ require([
       //Loop through the array of results to find object with cooresponding name selected
       for(var i=0; i < resultsArray.length; i++){
         if(resultsArray[i].displayName === "Feature Layer"){
-          if(resultsArray[i].name === selection){
+          if(resultsArray[i].title === selection){
             console.log(resultsArray[i]);
             serviceUrlForSelection = resultsArray[i].url;
             console.log("Url is: " + serviceUrlForSelection);
@@ -138,39 +139,16 @@ require([
 
     });
 
-    //Function to listen on click for re-register token
-    var e2 = document.getElementById("reRegisterToken");
-    e2.addEventListener("click", reRegisterClicked, false);
-
-    function reRegisterClicked (){
-      console.log("re-register clicked!");
-      var myToken = esri.id.credentials[0].token;
-      var myRegisterTokenJSON = {
-        "expires": 10000,
-        "server": "http://www.arcgis.com/sharing/rest",
-        "ssl": false,
-        "token": myToken,
-        "userId": "dchambers14"
-      }
-
-    
-
-      esriId.registerToken(myRegisterTokenJSON);
-
-      //token after re-register
-      console.log("new token: " + esri.id.credentials[0].token);
-    }
-
     function loadMap(){
 
       //Set the serviceDropdown list to visible (hidden initially)
       //domStyle.set("serviceDropdown","visibility", "visible")
-      domStyle.set("ddbstrap", "visibility", "visible");
+      domStyle.set("add-data-dropdown", "visibility", "visible");
       // Get a reference to the ArcGIS Map class
       map = bootstrapmap.create("mapDiv",{
-        basemap: "national-geographic",
-        center:[-122.45, 37.77],
-        zoom:12,
+        basemap: "osm",
+        center:[-97.69, 39.09],
+        zoom:5,
         scrollWheelZoom: false
       });
 
