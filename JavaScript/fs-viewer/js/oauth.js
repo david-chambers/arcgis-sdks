@@ -135,6 +135,9 @@ require([
         }
       };
 
+      //todo: figure out how to detect /layer-id and add/remove
+
+
       //Add selection to the map
       map.addLayer(new FeatureLayer(serviceUrlForSelection));
       
