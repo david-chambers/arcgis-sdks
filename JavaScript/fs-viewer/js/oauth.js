@@ -58,6 +58,9 @@ require([
       //Set the serviceDropdown list to visible (hidden initially)
       document.getElementById('toHide').style.display = "none";
 
+      //Hide the Steps
+      document.getElementById('toHide2').style.display = "none";
+      
       new arcgisPortal.Portal(info.portalUrl).signIn().then(
         function (portalUser){
           
