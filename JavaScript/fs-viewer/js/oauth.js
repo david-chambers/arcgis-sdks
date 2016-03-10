@@ -60,7 +60,7 @@ require([
 
       //Hide the Steps
       document.getElementById('toHide2').style.display = "none";
-      
+
       new arcgisPortal.Portal(info.portalUrl).signIn().then(
         function (portalUser){
           
@@ -136,7 +136,7 @@ require([
       };
 
       //Add selection to the map
-      map.addLayer(new FeatureLayer(serviceUrlForSelection + "/0"));
+      map.addLayer(new FeatureLayer(serviceUrlForSelection));
       
 
 
