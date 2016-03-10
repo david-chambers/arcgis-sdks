@@ -32,12 +32,12 @@
           </ul>
           <button type="submit" class="btn btn-default navbar-btn">Sign in</button> -->
 
-          <form id="sign-in" action="#" class="navbar-form navbar-right">
+          <form action="#" class="navbar-form navbar-right">
             
             <div class="input-group">
-              <input type="text" placeholder="app-id" class="form-control">
+              <input type="text" id="appid" placeholder="app-id" class="form-control">
             </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
+            <button id="sign-in" type="submit" class="btn btn-success">Sign in</button>
           </form>
           
             <!-- <form id="sign-in"action="#" class="navbar-form navbar-right">
@@ -60,18 +60,46 @@
     <div class="jumbotron" id="toHide" style="visible">
       <div class="container">
         <h1>Welcome!</h1>
-        <p>This is a sample for how to implement the OAuth2 pattern for accessing portal content.  You will need to generate an AppID in your developer account and then sign in to view your services. </p>
+        <p>This is a sample that demonstrates how to implement the OAuth2 pattern for accessing portal content.  You will need to generate an AppID in your developer account and then sign in to view your services. Follow the 3 easy steps below to get started!</p>
         <form role="form">
           <div class="form-group">
-            <div class="col-xs-2">
+            <!-- <div class="col-xs-2">
               <label for="appid">App ID:</label>
               <input type="text" class="form-control" id="appid" size="3">
-            </div>
+            </div> -->
           </div>
         </form>
 
       </div>
     </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Step 1</h2>
+          <p>Create a free ArcGIS Developer account or sign in to your existing account!</p>
+          <p><a class="btn btn-default" href="https://developers.arcgis.com/sign-in/" role="button">Get an Account! &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Step 2</h2>
+          <p>Create an application to generate an App-ID and add the referer URLS</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Step 3</h2>
+          <p>Paste your App-ID into the app-id text box above and click sign in!</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>Sample courtesy of David Chambers.</p>
+      </footer>
+    </div> <!-- /container -->
+
     <div class="container-fluid" style="padding-top:50px;">
       <div class="row">
         <div class="col-xs-2" id="add-data-dropdown">
