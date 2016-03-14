@@ -135,8 +135,20 @@ require([
         }
       };
 
+      //todo: figure out how to detect /layer-id and add/remove
+      var lastTwoCharactersURL = serviceUrlForSelection.slice(-2);
+      console.log(lastTwoCharactersURL);
+
+      if(lastTwoCharactersURL == "/0"){
+        console.log("this has a index!");
+        map.addLayer(new FeatureLayer(serviceUrlForSelection));
+      } else{
+        console.log("this doesn't have an index");
+        map.addLayer(new FeatureLayer(serviceUrlForSelection + "/0"));
+      }
+
       //Add selection to the map
-      map.addLayer(new FeatureLayer(serviceUrlForSelection));
+      //map.addLayer(new FeatureLayer(serviceUrlForSelection));
       
 
 
