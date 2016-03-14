@@ -5,6 +5,7 @@
 2. <a href="https://developers.arcgis.com/authentication/accessing-arcgis-online-services/#registering-your-application">Register a new application</a> to create a client-id (app id)
 3. After you have create an application select the 'Authentication' tab and add the following redirect URIs:
 <br>http://david-chambers.github.io/arcgis-sdks/JavaScript/fs-viewer/oauth-callback.html<br>
+![Image of Allowed Domains](https://dl.dropboxusercontent.com/u/343305078/AllowedDomains.png)
 4. <a href="http://david-chambers.github.io/arcgis-sdks/JavaScript/fs-viewer/#?">View Live Sample</a>
 <br>
 
