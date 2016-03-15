@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>OAuth2 Example</title>
+    <title>Feature Service Viewer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <!-- Step 1. Add CSS for Bootstrap, ArcGIS JS API, Bootstrap-map-js, and local -->
+    <!-- Add CSS for Bootstrap, ArcGIS JS API, Bootstrap-map-js, and local css file -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.15/esri/css/esri.css">   
     <link rel="stylesheet" type="text/css" href="http://esri.github.io/bootstrap-map-js/src/css/bootstrapmap.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css"   
+    <link rel="stylesheet" type="text/css" href="css/style.css">   
     
 
   </head>
@@ -18,55 +18,32 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a class="navbar-brand" href="#">Feature Service Viewer</a>
         </div>
+        <!-- navbar content -->
         <div id="navbar" class="navbar-collapse collapse">
-          <!-- <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" id="sign-in" class="btn btn-default navbar-btn">Sign in</a></li>
-          </ul>
-          <button type="submit" class="btn btn-default navbar-btn">Sign in</button> -->
-
+          
           <form action="#" class="navbar-form navbar-right">
-            
             <div class="input-group">
               <input type="text" id="appid" placeholder="app-id" class="form-control">
             </div>
             <button id="sign-in" type="submit" class="btn btn-success">Sign in</button>
-          </form>
-          
-            <!-- <form id="sign-in"action="#" class="navbar-form navbar-right">
-              
-                <input type="text" placeholder="Email" class="form-control">
-              
-              
-              <button class="btn btn-success navbar-btn">Sign in</button>
-              
-            </form> -->
-          
-
-        </div><!--/.nav-collapse -->
+          </form>       
+        </div>
+        <!--end navbar content -->
       </div>
     </nav>
     <!--End navbar-->
 
-    <!-- HTML to define the layout of the map and page -->
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron" id="toHide" style="visible">
+    <!-- HTML section to define the layout of the map and page -->
+    <!-- Main jumbotron for a primary message with instructions for demoing -->
+    <div class="jumbotron" id="primary-message-callout" style="visible">
       <div class="container">
         <h1>Welcome!</h1>
         <p>This is a sample that demonstrates how to implement the OAuth2 pattern for accessing portal content.  You will need to generate an AppID in your developer account and then sign in to view your services. Follow the 3 easy steps below to get started!</p>
         <form role="form">
           <div class="form-group">
-            <!-- <div class="col-xs-2">
-              <label for="appid">App ID:</label>
-              <input type="text" class="form-control" id="appid" size="3">
-            </div> -->
+            
           </div>
         </form>
 

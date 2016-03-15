@@ -56,7 +56,7 @@ require([
 
       //Hide the jumbotron
       //Set the serviceDropdown list to visible (hidden initially)
-      document.getElementById('toHide').style.display = "none";
+      document.getElementById('primary-message-callout').style.display = "none";
 
       //Hide the Steps
       document.getElementById('toHide2').style.display = "none";
