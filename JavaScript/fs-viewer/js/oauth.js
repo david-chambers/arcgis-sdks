@@ -59,7 +59,13 @@ require([
       document.getElementById('primary-message-callout').style.display = "none";
 
       //Hide the Steps
-      document.getElementById('toHide2').style.display = "none";
+      document.getElementById('steps-to-run').style.display = "none";
+
+      //Hide the app-id text box
+      document.getElementById('input-sign-in').style.display = "none";
+
+      //Hide the sign-in button
+      document.getElementById('sign-in-button').style.display = "none";
 
       new arcgisPortal.Portal(info.portalUrl).signIn().then(
         function (portalUser){
