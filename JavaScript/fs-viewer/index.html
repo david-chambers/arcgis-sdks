@@ -9,8 +9,6 @@
     <link rel="stylesheet" type="text/css" href="//js.arcgis.com/3.15/esri/css/esri.css">   
     <link rel="stylesheet" type="text/css" href="http://esri.github.io/bootstrap-map-js/src/css/bootstrapmap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">   
-    
-
   </head>
   <body>
 
@@ -43,15 +41,10 @@
       <div class="container">
         <h1>Welcome!</h1>
         <p>This is a sample that demonstrates how to implement the OAuth2 pattern for accessing portal content.  You will need to generate an AppID in your developer account and then sign in to view your services. Follow the 3 easy steps below to get started!</p>
-        <form role="form">
-          <div class="form-group">
-            
-          </div>
-        </form>
-
       </div>
     </div>
 
+    <!-- Container show steps to run sample -->
     <div id="steps-to-run" class="container">
       <!-- Example row of columns -->
       <div class="row">
@@ -71,38 +64,37 @@
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
+    </div> 
+    <!-- /container -->
 
-      <hr>
-
-      <footer>
-        <p>Sample courtesy of David Chambers.</p>
-      </footer>
-    </div> <!-- /container -->
-
+    <!-- Container for map and add data dropdown -->
     <div class="container-fluid" style="padding-top:50px;">
       <div class="row">
         <div class="col-xs-2" id="add-data-dropdown">
             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-            Add Data
-            <span class="caret"></span></button>
-            <ul class="dropdown-menu" id="serviceDropdown2">
-              <!--Dynamically appended-->
+              Add Data
+              <span class="caret"></span>
+            </button>
+
+            <ul class="dropdown-menu" id="service-dropdown-list">
+              <!--Services Dynamically appended here-->
             </ul>
         </div>
         <!--Map Div Container -->
         <div class="col-xs-10">
           <div id="mapDiv"></div>
         </div>
-        <!-- Add Data dropdown container -->
-        
-          
-
-
       </div>
-      
     </div>
-      
+
     
+    <!-- Container for footer -->
+    <div class="container" id="footer-container">
+      <hr>
+      <footer>
+        <p>Sample courtesy of <a href="https://github.com/david-chambers">David Chambers</a></p>
+      </footer>
+    </div>
 
     <!-- Add JS to Load the responsive map -->
     <script type="text/javascript">
@@ -114,14 +106,15 @@
             }]
         };
     </script>
-    <script src="//js.arcgis.com/3.15compact"></script>
-    <script src="js/oauth.js" type="text/javascript"></script>
 
-    <!-- jQuery (for Bootstrap's JavaScript plugins). NOTE: You can also use pure Dojo. See examples. -->
+    <!-- ArcGIS JS API -->
+    <script src="//js.arcgis.com/3.15compact"></script>
+    <!--Local JS -->
+    <script src="js/oauth.js" type="text/javascript"></script>
+    <!-- jQuery (for Bootstrap's JavaScript plugins). -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all  plugins or individual files as needed -->
+    <!-- Bootstrap JS -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-    
   </body>
 </html>
