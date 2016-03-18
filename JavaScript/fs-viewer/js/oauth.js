@@ -13,7 +13,7 @@ require([
     "dojo/dom-style", 
     "dojo/domReady!"
   ], function (
-    Map, bootstrapmap, arcgisPortal, OAuthInfo, esriId, FeatureLayer
+    Map, bootstrapmap, arcgisPortal, OAuthInfo, esriId, FeatureLayer,
     domStyle, domAttr, dom, on, arrayUtils, domStyle){
 
     //Global variables for resultsArray (object array of all AGOL items), map appID, and the oAuthInfo object.
