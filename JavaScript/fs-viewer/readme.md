@@ -10,7 +10,7 @@
 
 
 ##About
-This sample demonstrates how to use the OAuth2 authentication pattern to view all services that you own and add them to a web map.  It extends the pattern demonstarated in the <a href="https://developers.arcgis.com/javascript/jssamples/portal_oauth_popup.html">OAuth Popup</a> sample to demonstrate how you could authenticate a user and query for feature services that they own. After all feature services are added to a dropdown list and the user can select feature services to add to the map.  
+This sample demonstrates how to use the OAuth2 authentication pattern to view all services that you own and add them to a web map.  It extends the pattern demonstarated in the <a href="https://developers.arcgis.com/javascript/jssamples/portal_oauth_popup.html">OAuth Popup</a> sample to demonstrate how you could authenticate a user and query for feature services that they own. After, all feature services are added to a dropdown list and the user can select feature services to add to the map.  
 
 ##How it works
 First get the app id that the user enters into a text box and set it as the appId property of the OAuthInfo object
