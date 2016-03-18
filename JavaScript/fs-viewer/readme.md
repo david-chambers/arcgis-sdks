@@ -74,7 +74,7 @@ function queryPortal(portalUser){
 
 After, a <a href="https://github.com/david-chambers/arcgis-sdks/blob/master/JavaScript/fs-viewer/js/oauth.js#L129-L145">click listener is added to each element</a>, when the user selects an item the URL will be obtained and a FeatureLayer object will be instantiated with it.  This FeatureLayer is added to the map.  
 
-<br><br><br>
+###Demo
 ![Alt text](https://dl.dropboxusercontent.com/u/343305078/Demo_final.gif "Optional Title")
 
 ###Limitations
