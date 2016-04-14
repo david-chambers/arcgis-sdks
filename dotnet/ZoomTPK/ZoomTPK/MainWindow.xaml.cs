@@ -20,5 +20,15 @@ namespace ZoomTPK
 
             Debug.WriteLine(string.Format("Error while loading layer : {0} - {1}", e.Layer.ID, e.LoadError.Message));
         }
+
+        private async void zoomInButton_Click(object sender, RoutedEventArgs e)
+        {
+            await MyMapView.ZoomAsync(1.5);
+        }
+
+        private async void zoomOutButton_Click(object sender, RoutedEventArgs e)
+        {
+            await MyMapView.ZoomAsync(.5);
+        }
     }
 }

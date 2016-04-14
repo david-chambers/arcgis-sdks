@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{39DE280E-2709-4C05-8F0C-01F8774D73C7}</ProjectGuid>
+    <ProjectGuid>{7564D50A-A2F4-4803-B807-D7133AAF6FAD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>ZoomTPK</RootNamespace>
     <AssemblyName>ZoomTPK</AssemblyName>
