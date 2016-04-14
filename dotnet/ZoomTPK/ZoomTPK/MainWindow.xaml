@@ -9,8 +9,8 @@
 		<esri:MapView x:Name="MyMapView"
 					  LayerLoaded="MyMapView_LayerLoaded">
 			<esri:Map>
-				<esri:ArcGISTiledMapServiceLayer ID="Basemap"
-					ServiceUri="http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"/>
+				<!--<esri:ArcGISTiledMapServiceLayer ID="Basemap"
+					ServiceUri="http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"/>-->
 			</esri:Map>
 		</esri:MapView>
 
